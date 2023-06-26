@@ -11,6 +11,7 @@ MORSE_CODE_DICT = {
 
 TEXT_CODE_DICT = {v: k for (k, v) in MORSE_CODE_DICT.items()}
 
+
 def to_morse(message):
     result = []
     for char in message:
