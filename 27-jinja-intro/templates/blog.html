@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blob posts with Jinja</title>
+</head>
+<body>
+    {% for b in posts: %}
+        {% if b["id"] == 2: %}
+            <h1>{{b["title"]}}!</h1>
+            <h2>{{b["subtitle"]}},</h2>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
