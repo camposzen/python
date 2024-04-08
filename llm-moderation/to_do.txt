@@ -1,0 +1,11 @@
+Some steps before consider moving the service to production:
+- Evaluate others web frameworks (FastAPI, Django)
+- Proper implementation of SECRET_API_KEY to support keys dynamically created by the clients safely
+- Verify log configuration
+- Implement metrics to be appropriately scrapped by tools like Prometheus
+- Verify the need to use datastore to keep information durable
+- Package the application into a docker image to easy deployment
+- Include kubenertes descriptor targeting strategic cloud provider implementations
+- Define a release process
+- Extend coverage of the tests
+- Continues integration pipeline to address quality and stability
