@@ -1,0 +1,9 @@
+requests
+typing
+numpy
+openai
+tqdm
+datasets
+python-dotenv
+tiktoken
+scipy
