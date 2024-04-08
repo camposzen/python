@@ -1,7 +1,7 @@
 import selenium.webdriver.common.by
 from selenium import webdriver
 
-chrome_driver_path = "/Users/camposzen/PycharmProjects/chromedriver_mac64/chromedriver"
+chrome_driver_path = "/chromedriver_mac64/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 driver.get("https://www.python.org/")

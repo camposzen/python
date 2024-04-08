@@ -30,7 +30,7 @@ for a in all_addr:
     addresses.append(a.text)
 
 # Fill the form
-chrome_driver_path = "/Users/camposzen/PycharmProjects/chromedriver_mac64/chromedriver"
+chrome_driver_path = "/chromedriver_mac64/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 form_link = \
     "https://docs.google.com/forms/d/e/1FAIpQLSdYAxVMBXRwaA4AALe4fHK-pOCinwu5ki1gHeqGV--3O93mFg/viewform?usp=sf_link"

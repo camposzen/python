@@ -2,7 +2,7 @@ from selenium import webdriver
 import selenium.webdriver.common.by
 import time
 
-chrome_driver_path = "/Users/camposzen/PycharmProjects/chromedriver_mac64/chromedriver"
+chrome_driver_path = "/chromedriver_mac64/chromedriver"
 driver = webdriver.Chrome(chrome_driver_path)
 driver.get("http://orteil.dashnet.org/experiments/cookie/")
 

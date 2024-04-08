@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
 
-chrome_driver_path = "/Users/camposzen/PycharmProjects/chromedriver_mac64/chromedriver"
+chrome_driver_path = "/chromedriver_mac64/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 driver.get("https://en.wikipedia.org/wiki/Main_Page")
