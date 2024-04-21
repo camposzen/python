@@ -19,9 +19,9 @@ openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def format_conversation(question: str, context: str) -> list[ChatCompletionMessage]:
     """
-    Format a user's question into a list of ChatCompletionMessage objects including the initial system prompt and provided context.
+    Format a user's question into a list of ChatCompletionMessage objects including the initial system prompt and
+    provided context.
     """
-
     return [
         {
             "role": "system",
@@ -29,9 +29,7 @@ def format_conversation(question: str, context: str) -> list[ChatCompletionMessa
         },
         {
             "role": "user",
-            "content": context
-            + "\nUse the information above to answer the following question: "
-            + question,
+            "content": context + "\nUse the information above to answer the following question: " + question,
         }
     ]
 
@@ -39,12 +37,11 @@ def answer_question(question: str, context: str, seed: int = 0) -> str:
     """
     Retrieve responses to user query from ChatGPT
     """
-
     response = openai_client.chat.completions.create(
-        model = "gpt-3.5-turbo",
-        messages = format_conversation(question, context),
-        temperature = 1.0,
-        seed = 3
+        model="gpt-3.5-turbo",
+        messages=format_conversation(question, context),
+        temperature=1.0,
+        seed=3
     )
 
     return response.choices[0].message.content
